@@ -1,12 +1,9 @@
 const express = require('express');
-const cartRoutes = require('./routes/cartRoutes');
 
 
 const app = express();
 app.use(express.json());
 
-// Product routes 
-app.use('/api/cart', cartRoutes);
 
 // Catch undefined routes
 app.use((req, res) => {
